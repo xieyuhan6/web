@@ -1,0 +1,2 @@
+import { skills } from '../constants';
+export default function TechStack(){ return <section id="skills" className="section-shell section-space" aria-labelledby="skills-title"><div className="section-heading"><div><p className="eyebrow">SKILLS / 03</p><h2 id="skills-title">The tools behind the work.</h2></div><p>Skills from my studies, professional experience and personal projects.</p></div><div className="skills-grid">{skills.map(s=><article className="skill-card" key={s.title}><h3>{s.title}</h3><ul>{s.items.map(i=><li key={i}>{i}</li>)}</ul></article>)}</div></section> }
